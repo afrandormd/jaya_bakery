@@ -1,0 +1,35 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(255, 241, 205);
+}
+
+.navbar {
+    background-color: rgba(97, 19, 25, 1);
+}
+
+.logo-brand {
+    width: 50px;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    border-radius: 15px;
+}
+/* end banner */
+
+/* pilih categories */
+.pilih-categories .card {
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255, 232,174, 1);
+}
+.pilih-categories img {
+    max-height: 100px;
+}
+
+/* produk pilihan */
+.produk-pilihan .card {
+    border-radius: 15px;
+    /* border: none; */
+}
