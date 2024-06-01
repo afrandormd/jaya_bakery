@@ -41,6 +41,8 @@
             {{-- footer --}}
             @include('layouts.footer')
     </div>
+    {{-- livewire scripts --}}
+    @livewireScripts
 </body>
 
 </html>

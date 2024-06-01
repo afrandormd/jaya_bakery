@@ -4,6 +4,7 @@ body {
 }
 
 .navbar {
+    /* background-color: rgb(255, 241, 205); */
     background-color: rgba(97, 19, 25, 1);
 }
 
@@ -29,7 +30,40 @@ body {
 }
 
 /* produk pilihan */
-.produk-pilihan .card {
+.produk .card {
     border-radius: 15px;
     /* border: none; */
+}
+
+/* breadcrumb */
+.breadcrumb {
+    background-color: transparent;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: black;
+}
+.breadcrumb .active {
+    font-weight: bold;
+    color: rgba(97, 19, 25, 1);
+}
+
+/* button detail */
+.btn-dark {
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(97, 19, 25, 1);
+    color: rgba(255, 232,174, 1);
+}
+.btn-dark:hover {
+    background-color: rgba(255, 232,174, 1);
+    color: rgba(97, 19, 25, 1);
+    
+}
+
+/* pagination */
+.pagination .page-item.active .page-link {
+    background-color: rgba(97, 19, 25, 1); 
+    border-color: white;     
+    color: white;
 }

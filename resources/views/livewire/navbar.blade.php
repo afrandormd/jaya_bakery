@@ -1,6 +1,6 @@
 <div>
     {{-- Be like water. --}}
-    <nav class="navbar navbar-expand-md navbar-dark {{-- bg-white --}} shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-dark {{-- bg-white --}} {{-- shadow-sm --}}">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{-- <b>{{ config('app.name', 'Laravel') }}</b> --}}
@@ -20,6 +20,23 @@
                         <a class="nav-link" href="{{ route('home') }}">Home</a>
                     </li>
                     {{-- end Home Menu --}}
+                    {{-- dropdown --}}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            List Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            @foreach ($categories as $category)
+                                <li><a class="dropdown-item" href="#">{{ $category->nama }}</a></li>
+                            @endforeach
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('products') }}">All Products</a></li>
+                        </ul>
+                    </li>
+                    {{-- end dropdown --}}
                 </ul>
 
                 <!-- Right Side Of Navbar -->

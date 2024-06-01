@@ -30,7 +30,7 @@
         {{-- end categories --}}
 
         {{-- Best Products --}}
-        <div class="produk-pilihan my-5">
+        <div class="produk my-5">
             <h3><strong>Produk Pilihan</strong></h3>
             <div class="row mt-4">
                 @foreach ($products as $product)
